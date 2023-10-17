@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Baju</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+        }
+         
+        form {
+            text-align: left;
+        }
+        label, input, select {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        input[type="number"] {
+            width: 30%;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Toko Baju Roar</h1>
+    </header>
+    <div class="container">
+        <table border="0" width="100%">
+            <tr>
+                <td width="50%">
+        <h2>Informasi Pembeli</h2>
+        <form action="Tugas3.4.html" method="POST">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telepon">Nomor Telepon:</label>
+            <input type="number" id="telepon" name="telepon" min="10" required>
+
+            <h2>Pilihan Baju</h2>
+            <label for="jenis_baju">Jenis Baju:</label>
+            <select id="jenis_baju" name="jenis_baju" required>
+                <option value="Kemeja">Kemeja</option>
+                <option value="Kaos">Kaos</option>
+                <option value="Dress">Dress</option>
+                <option value="Jaket">Jaket</option>
+            </select>
+
+            <label for="ukuran">Ukuran Baju:</label>
+            <select id="ukuran" name="ukuran" required>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+
+            <label for="jumlah">Jumlah Baju:</label>
+            <input type="number" id="jumlah" name="jumlah" required>
+
+            <input type="submit" value="Pesan Baju">
+        </form>
+                </td>
+                <td width="50%" align="center">
+                    <img src="foto5.png" alt="baju" width="500px" height="400px" style="border-radius: 20px; cursor: pointer;">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
