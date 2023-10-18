@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 2 Form</title>
+</head>
+<body>
+    <h1>ICE CREAM | BULBUL</h1>
+    <p>Ice cream made from 100% selected cow's milk combined with dessert cake.</p>
+    <form  action="" method="POST">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="2">Your Information</th>
+                    <!-- <th>2</th> -->
+                </tr>
+            </thead>
+           <tbody>
+                <tr>
+		    <td><label for="name">Name :</label></td>  	
+		    <td><input type="text" name="name"></td>	                                    
+                </tr>
+                <tr>
+	            <td><label for="address">Address:</label></td>
+		    <td><input type="text" name="address"></td>                    
+                </tr>
+                <tr>
+		    <td><label for="telephone">Telephone Number :</label></td> 		
+		    <td><input type="number" name="telephone"></td>	                                      
+                </tr>
+                <tr>
+	            <td><label for="email">Email :</label></td>    
+		    <td><input type="email" name="email"></td> 	                                    
+                </tr>
+                <tr>
+	            <td><label for="">Delivery Instruction :</label></td>
+		    <td><textarea name="" rows="4" cols="21"></textarea></td>                    
+                </tr>
+           </tbody>
+        </table>
+
+        <fieldset>
+            <legend>Design Your Dream Ice Cream :</legend>
+            <h4>Ice Cream Specs</h4>
+            <h4>Flavor (Choose One):</h4>
+            <ul style="list-style: none;">
+                <li>
+		    <input type="radio" name="crust"  value="cw">	
+                    <label for="crust">Vanilla</label>                    
+                </li>
+                <li>
+		    <input type="radio" name="crust"  value="mg">
+                    <label for="crust">Chocolate</label>                 
+                </li>
+                <li>
+		    <input type="radio" name="crust"  value="gf">	
+                    <label for="crust">strawberry</label>    
+            
+                </li>
+            </ul>
+            <h4>Toping Cake (.......)</h4>
+            <ul style="list-style: none;">
+                <li>
+		    <input type="checkbox" name="toping"  value="rs">
+                    <label for="toping">Red Velvet</label>
+                    
+                </li>
+                <li>
+		    <input type="checkbox" name="toping"  value="mc">	
+                    <label for="toping">Matcha</label>
+              
+                </li>
+		<li>
+		   <input type="checkbox" name="toping"  value="pp">	
+                   <label for="toping">Dark Chocolate</label>
+              
+                </li>
+                </ul>
+       <h4>Number</h4>
+        <label for="count">How Many Ice Cream</label>
+        <input type="number" name="count">
+        <br><br>
+        <button type="submit">brim me a ice cream</button>
+        <button type="reset">cancel</button>
+    </fieldset>
+    </form>  
+</body>
+</html>
